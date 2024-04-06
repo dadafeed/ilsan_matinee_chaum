@@ -1,0 +1,60 @@
+/* header */
+header {width: 100%;background: #fff;}
+header h1 {width: 47.2rem;margin: 0 auto;padding: 2.6rem 0 1.8rem;}
+header h1 > a {display:block;}
+/* footer */
+footer {width: 100%;background: #000;}
+footer .top {height: 9.6rem;display:flex;justify-content: space-between;align-items: center;}
+footer .left_area {display: flex; align-items: center;}
+footer .left_area > .txt {color: #8f654d; margin-left: 3.4rem;}
+footer .left_area > .txt > .p_display {display: inline-block;}
+footer .right_area {display: flex;}
+footer .right_area > li {width: 2.4rem; margin-right: 2.4rem;}
+footer .right_area > li.logo {width: 5.4rem; margin-right: 2.4rem; margin-top: 0.2rem;}
+footer .right_area > li img {width: 100%;}
+footer .right_area > li > a {display: block;}
+footer .bottom {border-top: 1px solid #4d4d4d; text-align: center;padding: 2rem 0;}
+footer .bottom > span {display: inline-block; color: #747474;}
+footer .bottom > span > .p_display {display: inline-block;}
+
+/* ··················· tablet ··················· */
+@media all and ( max-width:1080px ){
+  /* header */
+  header {display: none;}
+  /* footer */
+  footer .top {height: 16.7rem;}
+  footer .left_area {display: block;}
+  footer .left_area > .logo {width:22.4rem;}
+  footer .left_area > .logo img {width:100%;}
+  footer .left_area > .txt {font-size: 1.6rem;margin-left: 0;margin-top: 1.8rem;}
+  footer .left_area > .txt > br.m_display {display:none;}
+  footer .right_area {margin-top: 4rem;}
+  footer .bottom > span {font-size: 1.2rem;}
+  footer .bottom > span > br.m_display {display:none;}
+}
+
+/* ··················· mobile ··················· */
+@media all and ( max-width:768px ){ 
+  footer {padding-top: 41.2rem;}
+  footer .top,
+  footer .bottom {max-width: 45.8rem; margin: 0 auto;}
+  footer .top {position:relative;display: block; height: 19.7rem; text-align: center;}
+  footer .bottom {margin-top: 8.7rem;}
+  footer .bottom > span > .p_display {display: none;}
+  footer .bottom > span > br.m_display {display: block;}
+  footer .left_area {padding-top: 10.7rem;}
+  footer .left_area > .logo {width:21.8rem;margin: 0 auto;}
+  footer .left_area > .logo > a {display: inline-block;}
+  footer .left_area > .txt {font-size: 1.4rem;}
+  footer .left_area > .txt > .p_display {display: none;}
+  footer .left_area > .txt > br.m_display {display: block;}
+  footer .right_area {position: absolute;top: 0;left: 50%;transform: translateX(-50%);justify-content: center;margin-top: 0;}
+  footer .right_area > li {width: 3.5rem;margin-right: 3.5rem;}
+  footer .right_area > li.logo {width: 7.7rem;}
+  footer .right_area > li.cart {margin-right: 0;}
+}
+
+@media all and (max-width:480px){
+  footer .right_area > li.logo {width: 5.7rem;}
+  footer .right_area > li {width: 2.5rem; margin-right: 2.5rem;}
+}
